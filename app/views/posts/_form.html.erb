@@ -1,0 +1,32 @@
+<style type="text/css">
+<!--
+form ul {
+  margin-bottom: 20px;
+}
+form ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+form ul li label {
+  margin-right: 5px;
+  width: 50px;
+  float: left;
+}
+-->
+</style>
+
+<%= form_with model: post, local: true do |f| %>
+  <ul>
+    <li>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </li>
+    <li>
+      <%= f.label :body %>
+      <%= f.text_area :body %>
+    </li>
+    <li>
+      <%= f.submit %>
+    </li>
+  </ul>
+<% end %>
