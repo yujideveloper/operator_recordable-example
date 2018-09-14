@@ -12,7 +12,7 @@ gem 'puma', '~> 3.11'
 
 gem 'paranoia'
 
-gem 'operator_recordable', github: "yujideveloper/operator_recordable"
+gem 'operator_recordable'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
