@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/yujideveloper/operator_recordable.git
-  revision: 40111eed11066264045a8b5d3deca1e457b01065
+  revision: 56a4e75a1233d874b36de188a2c443a165d3247e
   specs:
     operator_recordable (0.1.0)
       activerecord (~> 5.0)
