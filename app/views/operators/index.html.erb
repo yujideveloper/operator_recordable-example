@@ -1,0 +1,28 @@
+<%= link_to "New", action: :new %>
+<% if @operators.present? %>
+<table>
+  <caption>Operators</caption>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>creator</th>
+      <th>updater</th>
+      <th>deleter</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @operators.each do |operator| %>
+    <tr>
+      <td><%= link_to_if operator.deleted?.!, operator.id, action: :edit, id: operator.id %></td>
+      <td><%= operator.name %></td>
+      <td><%= operator.creator&.name %></td>
+      <td><%= operator.updater&.name %></td>
+      <td><%= operator.deleter&.name %></td>
+      <td><%= button_to "Delete", { action: :destroy, id: operator.id }, { method: :delete, disabled: operator.deleted? } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table
+<% end %>
