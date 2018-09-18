@@ -68,7 +68,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
-    operator_recordable (0.1.0)
+    operator_recordable (0.1.1)
       activerecord (~> 5.0)
     paranoia (2.4.1)
       activerecord (>= 4.0, < 5.3)
